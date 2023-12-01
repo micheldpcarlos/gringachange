@@ -1,6 +1,6 @@
-# WebExtension Vite Starter
+# GringaPrix
 
-A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.chrome.com/docs/extensions/reference/), [FireFox](https://addons.mozilla.org/en-US/developers/), etc.) starter template.
+Simpler and more user-friendly spiritual successor to PayoBR.
 
 <p align="center">
 <sub>Popup</sub><br/>
