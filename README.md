@@ -2,7 +2,7 @@
 
 Chrome extension for Brazilians working remotely abroad 💰➡🇧🇷
 
-> Simpler, more user-friendly, and highly flexible spiritual successor to PayoBR. [PayoBR](https://github.com/micheldpcarlos/PayoBR).
+> Simpler, more user-friendly, and highly flexible spiritual successor to [PayoBR](https://github.com/micheldpcarlos/PayoBR).
 
 <!-- <p align="center">
 <sub>Popup</sub><br/>
@@ -25,8 +25,3 @@ Chrome extension for Brazilians working remotely abroad 💰➡🇧🇷
 - 🖥 Content Script - Use Vue even in content script
 - 🌍 WebExtension - isomorphic extension for Chrome, Firefox, and others
 - 📃 Dynamic `manifest.json` with full type support
-
-
-
-> This project was started from [WebExtension Vite Starter](https://github.com/antfu/vitesse-webext) template made by Anthony Fu.
-
