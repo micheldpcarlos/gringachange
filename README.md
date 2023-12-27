@@ -1,6 +1,5 @@
-# GringaPrix
-
-Chrome extension for Brazilians working remotely abroad 💰➡🇧🇷
+# GringaChange
+Browser extension for Brazilians working remotely abroad 💰➡🇧🇷
 
 > Simpler, more user-friendly, and highly flexible spiritual successor to [PayoBR](https://github.com/micheldpcarlos/PayoBR).
 
