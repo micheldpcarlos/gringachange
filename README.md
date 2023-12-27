@@ -4,6 +4,7 @@ Chrome extension for Brazilians working remotely abroad 💰➡🇧🇷
 
 > Simpler, more user-friendly, and highly flexible spiritual successor to [PayoBR](https://github.com/micheldpcarlos/PayoBR).
 
+🇧🇷 PT-BR
 <!-- <p align="center">
 <sub>Popup</sub><br/>
 <img width="655" src="https://user-images.githubusercontent.com/11247099/126741643-813b3773-17ff-4281-9737-f319e00feddc.png"><br/>
