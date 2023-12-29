@@ -3,7 +3,7 @@ Browser extension for Brazilians working remotely abroad 💰➡🇧🇷
 
 > Simpler, more user-friendly, and highly flexible spiritual successor to [PayoBR](https://github.com/micheldpcarlos/PayoBR).
 
-Huge thanks to @raniellyferreira creator of [AwesomeAPI - Currency](https://docs.awesomeapi.com.br/api-de-moedas)
+Huge thanks to [@raniellyferreira](https://github.com/raniellyferreira) creator of [AwesomeAPI - Currency](https://docs.awesomeapi.com.br/api-de-moedas)
 
 🇧🇷 PT-BR
 <!-- <p align="center">
