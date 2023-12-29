@@ -23,6 +23,7 @@ export const useCurrencyData = () => {
   const { currentCurrencyData } = useLocalData()
   const interval = ref()
 
+  // API DOCS: https://docs.awesomeapi.com.br/api-de-moedas
   const getCurrencyData = async (configuration: Configuration) => {
     try {
       const response = await fetch(

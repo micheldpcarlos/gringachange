@@ -4,8 +4,15 @@ export interface Currency {
   icon: string
 }
 
+export interface Tax {
+  name: string
+  value: number
+}
+
 export interface Configuration {
   selectedCurrency: Currency
+  taxes: Tax[]
+  pageMode: PageMode
   timeout?: ReturnType<typeof setTimeout>
 }
 
@@ -22,3 +29,5 @@ export interface CurrencyData {
   timestamp: number
   varBid: number
 }
+
+export type PageMode = 'chart' | 'simulate' | 'alerts' | 'more'

@@ -18,6 +18,8 @@ const LOCAL_STORAGE_DATA_KEY = 'gringa-change-data'
 
 const defaultConfig: Configuration = {
   selectedCurrency: availableCurrencies[0],
+  taxes: [],
+  pageMode: 'chart',
 }
 
 const defaultCurrencyData: CurrencyData = {
@@ -35,6 +37,7 @@ const defaultCurrencyData: CurrencyData = {
 }
 
 export const useLocalData = () => {
+  // browser.storage.local.clear()
   const configuration = useWebExtensionStorage<Configuration>(LOCAL_STORAGE_KEY, defaultConfig)
   const currentCurrencyData = useWebExtensionStorage<CurrencyData>(LOCAL_STORAGE_DATA_KEY, defaultCurrencyData)
 
@@ -43,5 +46,14 @@ export const useLocalData = () => {
     browser.runtime.sendMessage({ id: 'currency-changed', data: configuration.value })
   }
 
-  return { configuration, currentCurrencyData, availableCurrencies, initNewCurrency }
+  const bidValueAfterTaxes = computed(() => {
+    if (!configuration)
+      return 0
+    const bidValue = currentCurrencyData.value.bid
+    const totalTaxes = configuration.value.taxes.reduce((acc, tax) => {
+      return acc + tax.value
+    }, 0)
+    return bidValue - (bidValue * totalTaxes)
+  })
+  return { configuration, currentCurrencyData, availableCurrencies, bidValueAfterTaxes, initNewCurrency }
 }

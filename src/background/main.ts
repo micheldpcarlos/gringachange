@@ -20,7 +20,23 @@ const localData = useLocalData()
 browser.runtime.onStartup.addListener(() => currencyData.initInterval(localData.configuration.value))
 browser.runtime.onInstalled.addListener(() => currencyData.initInterval(localData.configuration.value))
 
-browser.runtime.onMessage.addListener(({ id, data }) => {
+browser.runtime.onMessage.addListener(async ({ id, data }) => {
   if (id === 'currency-changed')
     currencyData.initInterval(data)
+
+  if (id === 'alert') {
+    const id = await browser.notifications.create(
+      'Example',
+      {
+        type: 'basic',
+        iconUrl: browser.runtime.getURL('./assets/icon-512.png'),
+        title: 'titleee',
+        message: 'Message nice!',
+      },
+    )
+
+    setTimeout(() => {
+      browser.notifications.clear(id)
+    }, 5000)
+  }
 })
