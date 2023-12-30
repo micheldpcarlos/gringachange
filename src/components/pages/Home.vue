@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CurrencyChart from '../CurrencyChart.vue'
 import HeaderWithButton from '../HeaderWithButton.vue'
 import PageModeToggle from '../PageModeToggle.vue'
 import { useLocalData } from '~/composables/useLocalData'
@@ -8,7 +9,7 @@ const { configuration, currentCurrencyData, bidValueAfterTaxes } = useLocalData(
 </script>
 
 <template>
-  <div class="p-2">
+  <div class="p-2 h-100%">
     <HeaderWithButton title="GringaChange" @click="$emit('showSettings')">
       <template #icon>
         <mdi:cog-outline />
@@ -31,7 +32,7 @@ const { configuration, currentCurrencyData, bidValueAfterTaxes } = useLocalData(
         </div>
       </div>
       <PageModeToggle v-model="configuration.pageMode" />
-      <CurrencyChart v-if="configuration.pageMode === 'chart'" />
+      <CurrencyChart v-if="configuration.pageMode === 'chart'" :configuration="configuration" />
     </div>
   </div>
 </template>

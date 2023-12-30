@@ -26,7 +26,7 @@ const onPageModeChange = (mode: PageMode) => {
 
 <template>
   <div
-    class="grid w-full grid-cols-3 h-8 items-center justify-center rounded-md bg-coolgray-100 p-1 grid w-full grid-cols-4"
+    class="grid w-full grid-cols-3 h-8 items-center justify-center rounded-md bg-coolgray-100 p-1 grid w-full grid-cols-4 cursor-pointer"
   >
     <button
       v-for="item in items" :key="item.mode"

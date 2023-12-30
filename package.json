@@ -31,7 +31,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "floating-vue": "^2.0.0-beta.24"
+    "floating-vue": "^2.0.0-beta.24",
+    "lightweight-charts": "^4.1.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.36.0",

@@ -8,7 +8,7 @@ const localData = useLocalData()
 </script>
 
 <template>
-  <div class="p-2 absolute top-0 left-0 w-100% h-100% bg-white">
+  <div class="p-2 absolute top-0 left-0 w-100% h-100% bg-white z-2">
     <HeaderWithButton title="Configurações" @click="$emit('closeSettings')">
       <template #icon>
         <material-symbols:close />

@@ -27,7 +27,7 @@ export const useCurrencyData = () => {
   const getCurrencyData = async (configuration: Configuration) => {
     try {
       const response = await fetch(
-        `https://economia.awesomeapi.com.br/last/${configuration.selectedCurrency.key}-BRL`,
+        `https://economia.awesomeapi.com.br/json/last/${configuration.selectedCurrency.key}-BRL`,
         {
           cache: 'reload',
           redirect: 'follow',
