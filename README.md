@@ -1,6 +1,9 @@
 # GringaChange
 Browser extension for Brazilians working remotely abroad 💰➡🇧🇷
 
+### WIP VERSION GIF
+![da218542ad63085522585124281f4a43](https://github.com/micheldpcarlos/gringachange/assets/29731180/fd58b4e6-e423-4987-87f0-fa1494558bec)
+
 > Simpler, more user-friendly, and highly flexible spiritual successor to [PayoBR](https://github.com/micheldpcarlos/PayoBR).
 
 Huge thanks to [@raniellyferreira](https://github.com/raniellyferreira) creator of the currency API we're using:
